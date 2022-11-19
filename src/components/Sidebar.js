@@ -9,7 +9,7 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
-import { BiAnalyse, BiSearch } from "react-icons/bi";
+import { BiAnalyse, BiNotepad, BiSearch } from "react-icons/bi";
 import { BiCog } from "react-icons/bi";
 import { RiPagesLine, RiContactsBookLine, RiAppsLine } from "react-icons/ri";
 import { AiFillHeart } from "react-icons/ai";
@@ -76,6 +76,11 @@ const routes = [
         path: "kanban",
         name: "Kanban ",
         icon: <BsKanban />,
+      },
+      {
+        path: "editor",
+        name: "Editor ",
+        icon: <BiNotepad />,
       },
     ],
   },

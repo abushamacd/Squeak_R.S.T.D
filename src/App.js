@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Dashboard from "./pages/dashboard";
 import Calendar from "./pages/calendar";
 import Kanban from "./pages/kanban";
+import Editor from "./pages/editor";
 
 const App = () => {
   const { activeMenu, currentColor } = useStateContext();
@@ -52,6 +53,7 @@ const App = () => {
               <Route path="/" element={<Dashboard />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/kanban" element={<Kanban />} />
+              <Route path="/editor" element={<Editor />} />
             </Routes>
           </div>
           <Footer />
