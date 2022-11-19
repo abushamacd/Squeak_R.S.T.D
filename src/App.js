@@ -11,6 +11,7 @@ import Dashboard from "./pages/dashboard";
 import Calendar from "./pages/calendar";
 import Kanban from "./pages/kanban";
 import Editor from "./pages/editor";
+import ColorPicker from "./pages/colorPicker";
 
 const App = () => {
   const { activeMenu, currentColor } = useStateContext();
@@ -54,6 +55,7 @@ const App = () => {
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/kanban" element={<Kanban />} />
               <Route path="/editor" element={<Editor />} />
+              <Route path="/colorpicker" element={<ColorPicker />} />
             </Routes>
           </div>
           <Footer />

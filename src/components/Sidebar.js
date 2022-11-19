@@ -23,6 +23,7 @@ import moment from "moment";
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import { BsKanban } from "react-icons/bs";
+import { GiPencilBrush } from "react-icons/gi";
 
 const routes = [
   {
@@ -81,6 +82,11 @@ const routes = [
         path: "editor",
         name: "Editor ",
         icon: <BiNotepad />,
+      },
+      {
+        path: "colorpicker",
+        name: "Color Picker ",
+        icon: <GiPencilBrush />,
       },
     ],
   },
