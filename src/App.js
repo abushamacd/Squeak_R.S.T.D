@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/dashboard";
+import Calendar from "./pages/calendar";
 
 const App = () => {
   const { activeMenu, currentColor } = useStateContext();
@@ -47,8 +48,8 @@ const App = () => {
           </div>
           <div>
             <Routes>
-              {/* dashboard  */}
               <Route path="/" element={<Dashboard />} />
+              <Route path="/calendar" element={<Calendar />} />
             </Routes>
           </div>
           <Footer />

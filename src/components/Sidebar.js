@@ -11,9 +11,9 @@ import {
 import { MdMessage } from "react-icons/md";
 import { BiAnalyse, BiSearch } from "react-icons/bi";
 import { BiCog } from "react-icons/bi";
-import { RiPagesLine, RiContactsBookLine } from "react-icons/ri";
-import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
-import { BsCartCheck } from "react-icons/bs";
+import { RiPagesLine, RiContactsBookLine, RiAppsLine } from "react-icons/ri";
+import { AiFillHeart } from "react-icons/ai";
+import { BsCalendarDate, BsCartCheck } from "react-icons/bs";
 import { useState } from "react";
 import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
@@ -62,24 +62,14 @@ const routes = [
     icon: <BiAnalyse />,
   },
   {
-    path: "/fileManager",
-    name: "File Manager",
-    icon: <AiTwotoneFileExclamation />,
+    path: "/apps",
+    name: "Apps",
+    icon: <RiAppsLine />,
     subRoutes: [
       {
-        path: "/settings/profile",
-        name: "Profile ",
-        icon: <FaUser />,
-      },
-      {
-        path: "/settings/2fa",
-        name: "2FA",
-        icon: <FaLock />,
-      },
-      {
-        path: "/settings/billing",
-        name: "Billing",
-        icon: <FaMoneyBill />,
+        path: "calendar",
+        name: "Calendar ",
+        icon: <BsCalendarDate />,
       },
     ],
   },
