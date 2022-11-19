@@ -22,6 +22,7 @@ import { useStateContext } from "../contexts/ContextProvider";
 import moment from "moment";
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
+import { BsKanban } from "react-icons/bs";
 
 const routes = [
   {
@@ -70,6 +71,11 @@ const routes = [
         path: "calendar",
         name: "Calendar ",
         icon: <BsCalendarDate />,
+      },
+      {
+        path: "kanban",
+        name: "Kanban ",
+        icon: <BsKanban />,
       },
     ],
   },
