@@ -214,6 +214,7 @@ const Sidebar = ({ children }) => {
               <NavLink
                 to="/"
                 onClick={handleCloseSideBar}
+                style={{ color: currentColor }}
                 className="items-center gap-3 ml-10 mt-4 flex text-xl font-extrabold tracking-tight dark:text-dark text-slate-900"
               >
                 <SiShopware />{" "}
@@ -290,7 +291,10 @@ const Sidebar = ({ children }) => {
                       height={100}
                       src="https://i.ibb.co/MgsTCcv/avater.jpg"
                     />
-                    <h1 className="user_name text-lg whitespace-nowrap">
+                    <h1
+                      style={{ color: currentColor }}
+                      className="user_name text-lg whitespace-nowrap"
+                    >
                       Abu Shama
                     </h1>
                     <p className="role text-sm whitespace-nowrap">
