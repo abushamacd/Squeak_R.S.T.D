@@ -8,10 +8,13 @@ const Notification = () => {
   const { currentColor } = useStateContext();
 
   return (
-    <div className="nav-item absolute right-5 md:right-40 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
+    <div className="nav-item absolute right-5 md:right-40 top-16 bg-white dark:bg-[#050b2f] p-8 rounded-lg w-96">
       <div className="flex justify-between items-center">
         <div className="flex gap-3">
-          <p className="font-semibold text-lg dark:text-gray-200">
+          <p
+            style={{ color: currentColor }}
+            className="font-semibold text-lg dark:text-gray-200"
+          >
             Notifications
           </p>
           <button
@@ -24,7 +27,7 @@ const Notification = () => {
         </div>
         <Button
           icon={<MdOutlineCancel />}
-          color="rgb(153, 171, 180)"
+          color={currentColor}
           bgHoverColor="light-gray"
           size="2xl"
           borderRadius="50%"
