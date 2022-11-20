@@ -3,13 +3,19 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaFileInvoiceDollar, FaHome, FaUser } from "react-icons/fa";
 import { MdMessage, MdOutlineStackedLineChart } from "react-icons/md";
-import { BiAnalyse, BiNotepad, BiSearch } from "react-icons/bi";
+import {
+  BiAnalyse,
+  BiDoughnutChart,
+  BiNotepad,
+  BiSearch,
+} from "react-icons/bi";
 import { RiPagesLine, RiContactsBookLine, RiAppsLine } from "react-icons/ri";
 import {
   AiFillHeart,
   AiOutlineAreaChart,
   AiOutlineBarChart,
   AiOutlineLineChart,
+  AiOutlinePieChart,
 } from "react-icons/ai";
 import {
   BsCalendarDate,
@@ -128,6 +134,11 @@ const routes = [
         path: "bar",
         name: "Bar Chart ",
         icon: <AiOutlineBarChart />,
+      },
+      {
+        path: "doughnut",
+        name: "Doughnut Chart ",
+        icon: <BiDoughnutChart />,
       },
     ],
   },

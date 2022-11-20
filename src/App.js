@@ -18,6 +18,7 @@ import Spreadsheet from "./pages/spreadsheet";
 import Line from "./pages/charts/line";
 import Area from "./pages/charts/area";
 import Bar from "./pages/charts/bar";
+import Doughnut from "./pages/charts/doughnut";
 
 const App = () => {
   const {
@@ -86,6 +87,7 @@ const App = () => {
                 <Route path="/line" element={<Line />} />
                 <Route path="/area" element={<Area />} />
                 <Route path="/bar" element={<Bar />} />
+                <Route path="/doughnut" element={<Doughnut />} />
               </Routes>
             </div>
             <Footer />
