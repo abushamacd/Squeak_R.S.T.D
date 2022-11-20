@@ -1,18 +1,11 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  FaFileInvoiceDollar,
-  FaHome,
-  FaLock,
-  FaMoneyBill,
-  FaUser,
-} from "react-icons/fa";
-import { MdMessage } from "react-icons/md";
+import { FaFileInvoiceDollar, FaHome, FaUser } from "react-icons/fa";
+import { MdMessage, MdOutlineStackedLineChart } from "react-icons/md";
 import { BiAnalyse, BiNotepad, BiSearch } from "react-icons/bi";
-import { BiCog } from "react-icons/bi";
 import { RiPagesLine, RiContactsBookLine, RiAppsLine } from "react-icons/ri";
-import { AiFillHeart } from "react-icons/ai";
+import { AiFillHeart, AiOutlineLineChart } from "react-icons/ai";
 import {
   BsCalendarDate,
   BsCartCheck,
@@ -111,25 +104,15 @@ const routes = [
     icon: <BsCartCheck />,
   },
   {
-    path: "/settings",
-    name: "Settings",
-    icon: <BiCog />,
+    path: "/chart",
+    name: "Chart",
+    icon: <AiOutlineLineChart />,
     exact: true,
     subRoutes: [
       {
-        path: "/settings/profile",
-        name: "Profile ",
-        icon: <FaUser />,
-      },
-      {
-        path: "/settings/2fa",
-        name: "2FA",
-        icon: <FaLock />,
-      },
-      {
-        path: "/settings/billing",
-        name: "Billing",
-        icon: <FaMoneyBill />,
+        path: "line",
+        name: "Line Chart ",
+        icon: <MdOutlineStackedLineChart />,
       },
     ],
   },
