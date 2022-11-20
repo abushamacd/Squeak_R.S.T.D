@@ -19,7 +19,7 @@ const DoughnutChart = ({ id, data, legendVisiblity, height }) => {
       id={id}
       legendSettings={{ visible: legendVisiblity, background: "white" }}
       height={height}
-      background={currentMode === "Dark" ? "#33373E" : "#fff"}
+      background={currentMode === "Dark" ? "#050b2f" : "#fff"}
       tooltip={{ enable: true }}
     >
       <Inject

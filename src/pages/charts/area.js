@@ -29,7 +29,7 @@ const Area = () => {
           primaryXAxis={areaPrimaryXAxis}
           primaryYAxis={areaPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}
-          background={currentMode === "Dark" ? "#33373E" : "#fff"}
+          background={currentMode === "Dark" ? "#050b2f" : "#fff"}
           legendSettings={{ background: "white" }}
         >
           <Inject services={[SplineAreaSeries, DateTime, Legend]} />
