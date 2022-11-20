@@ -32,7 +32,7 @@ import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import { BsKanban } from "react-icons/bs";
 import { GiPencilBrush } from "react-icons/gi";
-import { TbSignature } from "react-icons/tb";
+import { TbFileDollar, TbSignature } from "react-icons/tb";
 
 const routes = [
   {
@@ -139,6 +139,11 @@ const routes = [
         path: "doughnut",
         name: "Doughnut Chart ",
         icon: <BiDoughnutChart />,
+      },
+      {
+        path: "financial",
+        name: "Financial Chart ",
+        icon: <TbFileDollar />,
       },
     ],
   },
