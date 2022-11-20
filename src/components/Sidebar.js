@@ -21,6 +21,7 @@ import {
   AiOutlineLineChart,
 } from "react-icons/ai";
 import {
+  BsBarChartLine,
   BsCalendarDate,
   BsCartCheck,
   BsFileEarmarkSpreadsheet,
@@ -157,6 +158,11 @@ const routes = [
         path: "stacked",
         name: "Stacked Chart ",
         icon: <MdStackedBarChart />,
+      },
+      {
+        path: "colormapping",
+        name: "Color Mapping Chart",
+        icon: <BsBarChartLine />,
       },
     ],
   },

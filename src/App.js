@@ -22,6 +22,7 @@ import Doughnut from "./pages/charts/doughnut";
 import Financial from "./pages/charts/financial";
 import Pyramid from "./pages/charts/pyramid";
 import Stacked from "./pages/charts/stacked";
+import ColorMapping from "./pages/charts/colorMapping";
 
 const App = () => {
   const {
@@ -94,6 +95,7 @@ const App = () => {
                 <Route path="/financial" element={<Financial />} />
                 <Route path="/pyramid" element={<Pyramid />} />
                 <Route path="/stacked" element={<Stacked />} />
+                <Route path="/colormapping" element={<ColorMapping />} />
               </Routes>
             </div>
             <Footer />
