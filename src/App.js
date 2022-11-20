@@ -16,6 +16,7 @@ import ThemeSettings from "./components/ThemeSettings";
 import Signpad from "./pages/signpad";
 import Spreadsheet from "./pages/spreadsheet";
 import Line from "./pages/charts/line";
+import Area from "./pages/charts/area";
 
 const App = () => {
   const {
@@ -82,6 +83,7 @@ const App = () => {
                 <Route path="/signpad" element={<Signpad />} />
                 <Route path="/spreadsheet" element={<Spreadsheet />} />
                 <Route path="/line" element={<Line />} />
+                <Route path="/area" element={<Area />} />
               </Routes>
             </div>
             <Footer />

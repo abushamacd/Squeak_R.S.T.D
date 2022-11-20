@@ -5,7 +5,11 @@ import { FaFileInvoiceDollar, FaHome, FaUser } from "react-icons/fa";
 import { MdMessage, MdOutlineStackedLineChart } from "react-icons/md";
 import { BiAnalyse, BiNotepad, BiSearch } from "react-icons/bi";
 import { RiPagesLine, RiContactsBookLine, RiAppsLine } from "react-icons/ri";
-import { AiFillHeart, AiOutlineLineChart } from "react-icons/ai";
+import {
+  AiFillHeart,
+  AiOutlineAreaChart,
+  AiOutlineLineChart,
+} from "react-icons/ai";
 import {
   BsCalendarDate,
   BsCartCheck,
@@ -113,6 +117,11 @@ const routes = [
         path: "line",
         name: "Line Chart ",
         icon: <MdOutlineStackedLineChart />,
+      },
+      {
+        path: "area",
+        name: "Area Chart ",
+        icon: <AiOutlineAreaChart />,
       },
     ],
   },
