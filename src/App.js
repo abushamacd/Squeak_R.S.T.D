@@ -20,6 +20,7 @@ import Area from "./pages/charts/area";
 import Bar from "./pages/charts/bar";
 import Doughnut from "./pages/charts/doughnut";
 import Financial from "./pages/charts/financial";
+import Pyramid from "./pages/charts/pyramid";
 
 const App = () => {
   const {
@@ -90,6 +91,7 @@ const App = () => {
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/doughnut" element={<Doughnut />} />
                 <Route path="/financial" element={<Financial />} />
+                <Route path="/pyramid" element={<Pyramid />} />
               </Routes>
             </div>
             <Footer />

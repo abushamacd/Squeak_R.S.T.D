@@ -31,7 +31,7 @@ import moment from "moment";
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import { BsKanban } from "react-icons/bs";
-import { GiPencilBrush } from "react-icons/gi";
+import { GiLouvrePyramid, GiPencilBrush } from "react-icons/gi";
 import { TbFileDollar, TbSignature } from "react-icons/tb";
 
 const routes = [
@@ -144,6 +144,11 @@ const routes = [
         path: "financial",
         name: "Financial Chart ",
         icon: <TbFileDollar />,
+      },
+      {
+        path: "pyramid",
+        name: "Pyramid Chart ",
+        icon: <GiLouvrePyramid />,
       },
     ],
   },
