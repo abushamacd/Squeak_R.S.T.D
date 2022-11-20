@@ -21,6 +21,7 @@ import Bar from "./pages/charts/bar";
 import Doughnut from "./pages/charts/doughnut";
 import Financial from "./pages/charts/financial";
 import Pyramid from "./pages/charts/pyramid";
+import Stacked from "./pages/charts/stacked";
 
 const App = () => {
   const {
@@ -92,6 +93,7 @@ const App = () => {
                 <Route path="/doughnut" element={<Doughnut />} />
                 <Route path="/financial" element={<Financial />} />
                 <Route path="/pyramid" element={<Pyramid />} />
+                <Route path="/stacked" element={<Stacked />} />
               </Routes>
             </div>
             <Footer />

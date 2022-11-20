@@ -2,7 +2,11 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaFileInvoiceDollar, FaHome, FaUser } from "react-icons/fa";
-import { MdMessage, MdOutlineStackedLineChart } from "react-icons/md";
+import {
+  MdMessage,
+  MdOutlineStackedLineChart,
+  MdStackedBarChart,
+} from "react-icons/md";
 import {
   BiAnalyse,
   BiDoughnutChart,
@@ -15,7 +19,6 @@ import {
   AiOutlineAreaChart,
   AiOutlineBarChart,
   AiOutlineLineChart,
-  AiOutlinePieChart,
 } from "react-icons/ai";
 import {
   BsCalendarDate,
@@ -149,6 +152,11 @@ const routes = [
         path: "pyramid",
         name: "Pyramid Chart ",
         icon: <GiLouvrePyramid />,
+      },
+      {
+        path: "stacked",
+        name: "Stacked Chart ",
+        icon: <MdStackedBarChart />,
       },
     ],
   },
