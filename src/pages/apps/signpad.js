@@ -1,6 +1,6 @@
 import { SignatureComponent, Signature } from "@syncfusion/ej2-react-inputs";
 import React from "react";
-import Header from "../components/Header";
+import Header from "../../components/Header";
 
 const Signpad = () => {
   let signObj = Signature | null;

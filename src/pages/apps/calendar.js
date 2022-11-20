@@ -14,8 +14,8 @@ import {
 } from "@syncfusion/ej2-react-schedule";
 import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
 
-import { scheduleData } from "../data/dummy";
-import Header from "../components/Header";
+import { scheduleData } from "../../data/dummy";
+import Header from "../../components/Header";
 const PropertyPane = (props) => <div className="mt-5">{props.children}</div>;
 
 const Calendar = () => {

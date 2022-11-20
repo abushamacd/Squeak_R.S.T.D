@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../../components/Header";
 import {
   RangeDirective,
   RangesDirective,
@@ -7,7 +7,7 @@ import {
   SheetsDirective,
   SpreadsheetComponent,
 } from "@syncfusion/ej2-react-spreadsheet";
-import { defaultData } from "../data/dummy";
+import { defaultData } from "../../data/dummy";
 
 const Spreadsheet = () => {
   return (
