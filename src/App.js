@@ -14,6 +14,7 @@ import Editor from "./pages/editor";
 import ColorPicker from "./pages/colorPicker";
 import ThemeSettings from "./components/ThemeSettings";
 import Signpad from "./pages/signpad";
+import Spreadsheet from "./pages/spreadsheet";
 
 const App = () => {
   const {
@@ -78,6 +79,7 @@ const App = () => {
                 <Route path="/editor" element={<Editor />} />
                 <Route path="/colorpicker" element={<ColorPicker />} />
                 <Route path="/signpad" element={<Signpad />} />
+                <Route path="/spreadsheet" element={<Spreadsheet />} />
               </Routes>
             </div>
             <Footer />

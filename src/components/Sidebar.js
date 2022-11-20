@@ -13,7 +13,11 @@ import { BiAnalyse, BiNotepad, BiSearch } from "react-icons/bi";
 import { BiCog } from "react-icons/bi";
 import { RiPagesLine, RiContactsBookLine, RiAppsLine } from "react-icons/ri";
 import { AiFillHeart } from "react-icons/ai";
-import { BsCalendarDate, BsCartCheck } from "react-icons/bs";
+import {
+  BsCalendarDate,
+  BsCartCheck,
+  BsFileEarmarkSpreadsheet,
+} from "react-icons/bs";
 import { useState } from "react";
 import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
@@ -93,6 +97,11 @@ const routes = [
         path: "signpad",
         name: "Signature Pad",
         icon: <TbSignature />,
+      },
+      {
+        path: "spreadsheet",
+        name: "Spreadsheet",
+        icon: <BsFileEarmarkSpreadsheet />,
       },
     ],
   },
