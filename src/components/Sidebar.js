@@ -8,6 +8,7 @@ import { RiPagesLine, RiContactsBookLine, RiAppsLine } from "react-icons/ri";
 import {
   AiFillHeart,
   AiOutlineAreaChart,
+  AiOutlineBarChart,
   AiOutlineLineChart,
 } from "react-icons/ai";
 import {
@@ -122,6 +123,11 @@ const routes = [
         path: "area",
         name: "Area Chart ",
         icon: <AiOutlineAreaChart />,
+      },
+      {
+        path: "bar",
+        name: "Bar Chart ",
+        icon: <AiOutlineBarChart />,
       },
     ],
   },

@@ -17,6 +17,7 @@ import Signpad from "./pages/signpad";
 import Spreadsheet from "./pages/spreadsheet";
 import Line from "./pages/charts/line";
 import Area from "./pages/charts/area";
+import Bar from "./pages/charts/bar";
 
 const App = () => {
   const {
@@ -84,6 +85,7 @@ const App = () => {
                 <Route path="/spreadsheet" element={<Spreadsheet />} />
                 <Route path="/line" element={<Line />} />
                 <Route path="/area" element={<Area />} />
+                <Route path="/bar" element={<Bar />} />
               </Routes>
             </div>
             <Footer />
