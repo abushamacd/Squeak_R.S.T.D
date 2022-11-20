@@ -24,6 +24,7 @@ import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import { BsKanban } from "react-icons/bs";
 import { GiPencilBrush } from "react-icons/gi";
+import { TbSignature } from "react-icons/tb";
 
 const routes = [
   {
@@ -87,6 +88,11 @@ const routes = [
         path: "colorpicker",
         name: "Color Picker ",
         icon: <GiPencilBrush />,
+      },
+      {
+        path: "signpad",
+        name: "Signature Pad",
+        icon: <TbSignature />,
       },
     ],
   },

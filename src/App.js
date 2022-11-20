@@ -13,6 +13,7 @@ import Kanban from "./pages/kanban";
 import Editor from "./pages/editor";
 import ColorPicker from "./pages/colorPicker";
 import ThemeSettings from "./components/ThemeSettings";
+import Signpad from "./pages/signpad";
 
 const App = () => {
   const {
@@ -76,6 +77,7 @@ const App = () => {
                 <Route path="/kanban" element={<Kanban />} />
                 <Route path="/editor" element={<Editor />} />
                 <Route path="/colorpicker" element={<ColorPicker />} />
+                <Route path="/signpad" element={<Signpad />} />
               </Routes>
             </div>
             <Footer />
