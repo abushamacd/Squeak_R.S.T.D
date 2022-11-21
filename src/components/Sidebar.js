@@ -23,8 +23,9 @@ import {
 import {
   BsBarChartLine,
   BsCalendarDate,
-  BsCartCheck,
   BsFileEarmarkSpreadsheet,
+  BsGrid1X2,
+  BsTable,
 } from "react-icons/bs";
 import { useState } from "react";
 import { SiShopware } from "react-icons/si";
@@ -55,19 +56,31 @@ const routes = [
     icon: <RiPagesLine />,
     subRoutes: [
       {
-        path: "/pages/users",
+        path: "/users",
         name: "Users ",
         icon: <FaUser />,
       },
       {
-        path: "/pages/contacts",
+        path: "/contacts",
         name: "Contacts ",
         icon: <RiContactsBookLine />,
       },
       {
-        path: "/pages/invoices",
+        path: "/invoices",
         name: "Invoices ",
         icon: <FaFileInvoiceDollar />,
+      },
+    ],
+  },
+  {
+    path: "/tables",
+    name: "Tables",
+    icon: <BsTable />,
+    subRoutes: [
+      {
+        path: "/grid",
+        name: "Grid Table ",
+        icon: <BsGrid1X2 />,
       },
     ],
   },
@@ -112,11 +125,6 @@ const routes = [
         icon: <BsFileEarmarkSpreadsheet />,
       },
     ],
-  },
-  {
-    path: "/orders",
-    name: "Order",
-    icon: <BsCartCheck />,
   },
   {
     path: "/chart",
