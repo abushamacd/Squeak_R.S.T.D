@@ -128,29 +128,29 @@ export const EditorData = () => (
     </h3>
   </div>
 );
-const customerGridImage = (props) => (
-  <div className="image flex gap-4">
-    <img
-      className="rounded-full w-10 h-10"
-      src={props.CustomerImage}
-      alt="employee"
-    />
-    <div>
-      <p>{props.CustomerName}</p>
-      <p>{props.CustomerEmail}</p>
-    </div>
-  </div>
-);
+// const customerGridImage = (props) => (
+//   <div className="image flex gap-4">
+//     <img
+//       className="rounded-full w-10 h-10"
+//       src={props.CustomerImage}
+//       alt="employee"
+//     />
+//     <div>
+//       <p>{props.CustomerName}</p>
+//       <p>{props.CustomerEmail}</p>
+//     </div>
+//   </div>
+// );
 
-const customerGridStatus = (props) => (
-  <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
-    <p
-      style={{ background: props.StatusBg }}
-      className="rounded-full h-3 w-3"
-    />
-    <p>{props.Status}</p>
-  </div>
-);
+// const customerGridStatus = (props) => (
+//   <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
+//     <p
+//       style={{ background: props.StatusBg }}
+//       className="rounded-full h-3 w-3"
+//     />
+//     <p>{props.Status}</p>
+//   </div>
+// );
 export const areaPrimaryXAxis = {
   valueType: "DateTime",
   labelFormat: "y",
@@ -402,10 +402,22 @@ export const LinePrimaryYAxis = {
 
 export const customersGrid = [
   { type: "checkbox", width: "50" },
+  // {
+  //   headerText: "Name",
+  //   width: "150",
+  //   // template: customerGridImage,
+  //   textAlign: "Center",
+  // },
   {
     headerText: "Name",
     width: "150",
-    template: customerGridImage,
+    field: "CustomerName",
+    textAlign: "Center",
+  },
+  {
+    headerText: "Email",
+    width: "150",
+    field: "CustomerEmail",
     textAlign: "Center",
   },
   {
@@ -420,7 +432,7 @@ export const customersGrid = [
     width: "130",
     format: "yMd",
     textAlign: "Center",
-    template: customerGridStatus,
+    // template: customerGridStatus,
   },
   {
     field: "Weeks",
