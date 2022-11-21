@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { FaFileInvoiceDollar, FaHome, FaUser } from "react-icons/fa";
+import { FaHome, FaUser } from "react-icons/fa";
 import {
   MdMessage,
   MdOutlineStackedLineChart,
@@ -13,11 +13,12 @@ import {
   BiNotepad,
   BiSearch,
 } from "react-icons/bi";
-import { RiPagesLine, RiContactsBookLine, RiAppsLine } from "react-icons/ri";
+import { RiAppsLine } from "react-icons/ri";
 import {
   AiFillHeart,
   AiOutlineAreaChart,
   AiOutlineBarChart,
+  AiOutlineForm,
   AiOutlineLineChart,
 } from "react-icons/ai";
 import {
@@ -51,24 +52,14 @@ const routes = [
     icon: <MdMessage />,
   },
   {
-    path: "/pages",
-    name: "Pages",
-    icon: <RiPagesLine />,
+    path: "/forms",
+    name: "Forms",
+    icon: <AiOutlineForm />,
     subRoutes: [
       {
-        path: "/users",
-        name: "Users ",
+        path: "/createuser",
+        name: "User Form ",
         icon: <FaUser />,
-      },
-      {
-        path: "/contacts",
-        name: "Contacts ",
-        icon: <RiContactsBookLine />,
-      },
-      {
-        path: "/invoices",
-        name: "Invoices ",
-        icon: <FaFileInvoiceDollar />,
       },
     ],
   },

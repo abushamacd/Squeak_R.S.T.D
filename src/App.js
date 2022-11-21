@@ -24,6 +24,10 @@ import Pyramid from "./pages/charts/pyramid";
 import Stacked from "./pages/charts/stacked";
 import ColorMapping from "./pages/charts/colorMapping";
 import Grid from "./pages/tables/grid";
+import Messages from "./pages/messages";
+import Analytics from "./pages/analytics";
+import Saved from "./pages/saved";
+import Createuser from "./pages/forms/createuser";
 
 const App = () => {
   const {
@@ -98,6 +102,10 @@ const App = () => {
                 <Route path="/stacked" element={<Stacked />} />
                 <Route path="/colormapping" element={<ColorMapping />} />
                 <Route path="/grid" element={<Grid />} />
+                <Route path="/messages" element={<Messages />} />
+                <Route path="/analytics" element={<Analytics />} />
+                <Route path="/saved" element={<Saved />} />
+                <Route path="/createuser" element={<Createuser />} />
               </Routes>
             </div>
             <Footer />
