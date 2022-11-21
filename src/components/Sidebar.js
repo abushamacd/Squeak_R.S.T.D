@@ -39,6 +39,7 @@ import Dropdown from "./Dropdown";
 import { BsKanban } from "react-icons/bs";
 import { GiLouvrePyramid, GiPencilBrush } from "react-icons/gi";
 import { TbFileDollar, TbSignature } from "react-icons/tb";
+import logo from "../logo.png";
 
 const routes = [
   {
@@ -271,7 +272,7 @@ const Sidebar = ({ children }) => {
                 style={{ color: currentColor }}
                 className="items-center gap-3 ml-10 mt-4 flex text-xl font-extrabold tracking-tight dark:text-dark text-slate-900"
               >
-                <SiShopware />{" "}
+                <img className="w-1/12" src={logo} alt="logo" />
                 <motion.span
                   variants={showAnimation}
                   initial="hidden"
@@ -279,7 +280,7 @@ const Sidebar = ({ children }) => {
                   exit="hidden"
                   className={`logo text-2xl whitespace-nowrap`}
                 >
-                  Squeak N.S.T.D.
+                  Squeak R.S.T.D.
                 </motion.span>
               </NavLink>
               <TooltipComponent content="Menu" position="BottomCenter">
