@@ -29,7 +29,6 @@ import {
   BsTable,
 } from "react-icons/bs";
 import { useState } from "react";
-import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { useStateContext } from "../contexts/ContextProvider";
