@@ -40,7 +40,37 @@ The project is built using the following technologies:
 
 ## 📦 Dependencies
 
-There have no dependencies to run this project
+The project uses the following major dependencies:
+
+| Package | Purpose |
+|---|---|
+| `react` | Building the user interface |
+| `react-dom` | Rendering React components |
+| `react-router-dom` | Application routing |
+| `@syncfusion/ej2` | Syncfusion core components |
+| `@syncfusion/ej2-react-charts` | Interactive charts |
+| `@syncfusion/ej2-react-grids` | Data grids |
+| `@syncfusion/ej2-react-calendars` | Calendar and date pickers |
+| `@syncfusion/ej2-react-schedule` | Scheduling components |
+| `@syncfusion/ej2-react-kanban` | Kanban boards |
+| `@syncfusion/ej2-react-dropdowns` | Dropdown components |
+| `@syncfusion/ej2-react-inputs` | Input components |
+| `@syncfusion/ej2-react-popups` | Dialogs and popups |
+| `@syncfusion/ej2-react-spreadsheet` | Spreadsheet functionality |
+| `@syncfusion/ej2-react-richtexteditor` | Rich-text editing |
+| `framer-motion` | Animations |
+| `react-icons` | UI icons |
+| `moment` | Date and time manipulation |
+| `dotenv` | Environment variable management |
+
+### Development Dependencies
+
+- `tailwindcss` – Utility-first CSS framework.
+- `postcss` – CSS processing.
+- `autoprefixer` – Automatic CSS vendor prefixes.
+- `eslint` – JavaScript code quality and linting.
+- `eslint-config-airbnb` – Airbnb coding standards.
+- `eslint-plugin-react` – React-specific linting rules.
 
 ## 💻 Getting Started
 
